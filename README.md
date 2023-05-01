@@ -3,7 +3,7 @@
 A large-scale Chinese mental and physical disorder (MPD) knowledge graph combining multi-source data from the online medical consulting platform and domain lexicons.
 
 ## 1. Introduction
-- This project crawls through online medical consultation records of patients from websites and build an MPD knowledge ontology by extracting the core conceptual features of the text. Based on the ontology, an MPD knowledge graph containing 12,673 nodes and 82,195 relations is obtained using term matching with a domain thesaurus of each concept
+This project crawls through online medical consultation records of patients from websites and build an MPD knowledge ontology by extracting the core conceptual features of the text. Based on the ontology, an MPD knowledge graph containing 12,673 nodes and 82,195 relations is obtained using term matching with a domain thesaurus of each concept
 
 ## 2. File
 - "01PA" is the node information of *patient*.
@@ -37,7 +37,7 @@ Domain lexicons were collected to perform term matching on the core concepts in 
 
 - Symptom knowledge base. This is derived from Chinese symptom knowledge base (CSKB), the terms in the symptom category (R) in ICD-10 and the Dalian University of Technology sentiment dictionary with negative class terms (“'boredom,” “abhorrence,” “sadness,” “fear,” “guilt,” “anger,” “panic,” “disappointment,” and “shame”).
 
-- Drug knowledge base. This is derived from the Chinese medical knowledge graph (CMeKG) and the “A+ Medical Encyclopedia” (AME) website.
+- Drug knowledge base. This is derived from the Chinese medical knowledge graph (CMeKG) and the “A+ Medical Encyclopedia” website.
 
 - Examination and surgical operation thesaurus. This is derived from CSKB and International Classification of Diseases Clinical Modification of 9th revision operations and procedures (ICD-9-CM3).
 
@@ -45,4 +45,12 @@ Domain lexicons were collected to perform term matching on the core concepts in 
 
 - Social element. This is derived from the class selection of the subject word list of the Modern Chinese Classification Dictionary (MCCD).
 
-- Duration. This could be determined by the linguistic rule of “number + time unit”, where time units include “day,” “night,” “week,” “month,” “year,”, such as “one week.”
+- Duration. This could be determined by the linguistic rule of “number + time unit”, where time units include “day,” “night,” “week,” “month,” “year”, such as “one week.”
+
+## 4. Graph data structure
+The MPD knowledge graph with 12,673 nodes and 82,195 relations was built. Taking a patient retrieval as example:
+
+![patient](https://user-images.githubusercontent.com/55570101/235467772-9e2f4c76-b364-4ef8-b4e3-c059c32194ff.svg)
+
+## Declaration
+This work is the original research of the "Data Analysis and Computing" group in the School of Information Management, Nanjing University.
