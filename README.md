@@ -53,4 +53,4 @@ The MPD knowledge graph with 12,673 nodes and 82,195 relations was built. Taking
 ![patient](https://user-images.githubusercontent.com/55570101/235467772-9e2f4c76-b364-4ef8-b4e3-c059c32194ff.svg)
 
 ## Declaration
-This work is the original research of the "Data Analysis and Computing" group in the School of Information Management, Nanjing University.
+This work is the original research of the Text & Social Media Mining Lab (TSMM) of Yonsei university and the "Data Analysis and Computing" group in the School of Information Management of Nanjing University.
