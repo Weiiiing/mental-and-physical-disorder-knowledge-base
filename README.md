@@ -27,3 +27,22 @@ A large-scale Chinese mental and physical disorder (MPD) knowledge graph combini
 - "19PA_SO" is the relationship between *patient* and *social cause or effect*.
 - "20PA_OP" is the relationship between *patient* and *operation*.
 - "21PA_PE" is the relationship between *patient* and *period*.
+
+## 3. Corpus and Method
+The dataset consists of patient’s consultation records from the online medical consultation platform named “The good doctor online”. This project included 102 hospitals and their URLs with psychosomatic departments in OMC platform. In order to expand the data size, we obtained the top five mental department URLs in 2021 and crawled through all the consultation records based on this merged list.
+
+Domain lexicons were collected to perform term matching on the core concepts in the corpus, which in turn allows us to obtain information on the medical attributes of each patient, which is then organized to build a patient attribute knowledge graph (AKG).
+
+- Disease thesaurus. This is derived from ICD-10 and DSM-5.
+
+- Symptom knowledge base. This is derived from Chinese symptom knowledge base (CSKB), the terms in the symptom category (R) in ICD-10 and the Dalian University of Technology sentiment dictionary with negative class terms (“'boredom,” “abhorrence,” “sadness,” “fear,” “guilt,” “anger,” “panic,” “disappointment,” and “shame”).
+
+- Drug knowledge base. This is derived from the Chinese medical knowledge graph (CMeKG) and the “A+ Medical Encyclopedia” (AME) website.
+
+- Examination and surgical operation thesaurus. This is derived from CSKB and International Classification of Diseases Clinical Modification of 9th revision operations and procedures (ICD-9-CM3).
+
+- Body thesaurus, i.e., human tissue terms. This is derived from the electronic medical record data of China Conference on Knowledge Graph and Semantic Computing (CCKS) 2018-2020, and the Sogo human anatomy thesaurus.
+
+- Social element. This is derived from the class selection of the subject word list of the Modern Chinese Classification Dictionary (MCCD).
+
+- Duration. This could be determined by the linguistic rule of “number + time unit”, where time units include “day,” “night,” “week,” “month,” “year,”, such as “one week.”
